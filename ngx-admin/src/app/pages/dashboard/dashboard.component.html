@@ -1,0 +1,92 @@
+<ng-container *ngIf="isDataAvailable">
+  <h2>Overview</h2>
+<div class="row">
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>{{overviewComputations()[0]}}</h4></nb-card-header>
+        <nb-card-body>Sales Amount</nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>{{overviewComputations()[1]}}</h4></nb-card-header>
+        <nb-card-body>Units Sold</nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>{{overviewComputations()[2]}}</h4></nb-card-header>
+        <nb-card-body>Regions</nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>{{overviewComputations()[3]}}</h4></nb-card-header>
+        <nb-card-body>Managers</nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>{{overviewComputations()[4]}}</h4></nb-card-header>
+        <nb-card-body>Salesmen</nb-card-body>
+      </nb-card>
+</div>
+
+
+<h2>Regional Sales</h2>
+<div class="row">
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>East</h4></nb-card-header>
+        <nb-card-body>
+          <p>Amount: {{regionalSalesComputations()[0]}}</p>
+          <p>Units: {{regionalSalesComputations()[1]}}</p>
+        </nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>West</h4></nb-card-header>
+        <nb-card-body>
+          <p>Amount: {{regionalSalesComputations()[2]}}</p>
+          <p>Units: {{regionalSalesComputations()[3]}}</p>
+        </nb-card-body>
+      </nb-card>
+
+      <nb-card class="col-lg-2 col-6">
+        <nb-card-header><h4>Central</h4></nb-card-header>
+        <nb-card-body>
+          <p>Amount: {{regionalSalesComputations()[4]}}</p>
+          <p>Units: {{regionalSalesComputations()[5]}}</p>
+        </nb-card-body>
+      </nb-card>
+</div>
+
+<h2>Manager Sales</h2>
+<div class="row">
+  <nb-card class="col-lg-2 col-6">
+    <nb-card-header><h4>Martha</h4></nb-card-header>
+    <nb-card-body>
+      <p>Amount: {{managerSalesComputations()[0]}}</p>
+      <p>Units: {{managerSalesComputations()[1]}}</p>
+    </nb-card-body>
+  </nb-card>
+ 
+  <nb-card class="col-lg-2 col-6">
+    <nb-card-header><h4>Hermann</h4></nb-card-header>
+    <nb-card-body>
+      <p>Amount: {{managerSalesComputations()[2]}}</p>
+      <p>Units: {{managerSalesComputations()[3]}}</p>
+    </nb-card-body>
+  </nb-card>
+
+  <nb-card class="col-lg-2 col-6">
+    <nb-card-header><h4>Timothy</h4></nb-card-header>
+    <nb-card-body>
+      <p>Amount: {{managerSalesComputations()[4]}}</p>
+      <p>Units: {{managerSalesComputations()[5]}}</p>
+    </nb-card-body>
+  </nb-card>
+
+  <nb-card class="col-lg-2 col-6">
+    <nb-card-header><h4>Douglas</h4></nb-card-header>
+    <nb-card-body>
+      <p>Amount: {{managerSalesComputations()[6]}}</p>
+      <p>Units: {{managerSalesComputations()[7]}}</p>
+    </nb-card-body>
+  </nb-card>
+</div>
+</ng-container>
